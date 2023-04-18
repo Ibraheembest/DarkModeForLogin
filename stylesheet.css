@@ -1,0 +1,181 @@
+margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Fira Code', monospace;
+    color: blue;
+}
+
+header {
+	background-color: #9dc0df;
+	color: blue;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#HGR{
+    display: flex;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+ul {
+    display: inline-flex;
+	list-style: none;
+	margin-top: 5px;
+	padding: 0;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: blue;
+    font-weight:bolder;
+    font-size: large;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: white;
+    color: black;
+}
+#logo{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 200px;
+}
+
+form {
+    background-color: #9dc0df;
+    font-family: 'Source Code Pro', monospace;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #888888;
+    margin-bottom: 1000px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-bottom: 20px;
+    
+}
+
+
+.form input[type="text"]{
+    padding: 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+    width: 300px;
+} 
+
+.form input[type="text"]:hover, 
+.form input[type="checkbox"]:hover {
+	border: 2px solid #ccc;
+}
+
+.form input[type="text"]:valid, 
+.form input[type="checkbox"]:valid {
+	border: 2px solid green;
+}
+
+.form input[type="text"]:invalid, 
+.form input[type="checkbox"]:invalid {
+	border: 2px solid #1d82db;
+}
+
+.form input[type="checkbox"] {
+    display: inline-flex;
+	align-items: center;
+	margin-right: 10px;
+}
+
+button[type="submit"] {
+    font-family: 'Fira Code', monospace;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	color:blue ;
+    box-shadow: 0px 0px 10px #888888;
+}
+#checkbox{
+display: flex;
+flex-direction: row-reverse;
+}
+.footer {
+    display:flex ;
+    align-items: flex-start;
+    background-color: blue;
+    color: #9dc0df;
+    padding: 20px;
+    position: fixed;
+    font-size: large;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+.dark-mode {
+    background-color: #333;
+    color: #ccc;
+}
+
+.dark-mode header {
+    background-color: #666;
+    color: #ccc;
+}
+
+.dark-mode footer {
+    background-color: #666;
+    color: #ccc;
+}
+
+.dark-mode form {
+    background-color: #666;
+    color: #ccc;
+}
+#dark-mode-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 12px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  #dark-mode-toggle:hover {
+    box-shadow: 0 0 5px 2px #fff;
+  }
+  
+
+
+
+
+
+  

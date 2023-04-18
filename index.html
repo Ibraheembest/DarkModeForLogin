@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+	<title>Flexbox Form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+                <div id="logo" style="margin-left: 15px;">
+                    <li >Logo</li>
+                </div>
+                <div id="HGR">
+                    <li><a href="#">Home</a></li>
+				    <li><a href="#">Gallery</a></li>
+				    <li><a href="#">Reviews</a></li>
+                </div>
+                <li>
+                    <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle</button>
+                </li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<form action="about:blank" method="POST">
+			<div class="form">
+				<label for="first-name">First Name:</label>
+				<input type="text" id="first-name" name="first-name" required>
+			</div>
+			<div class="form">
+				<label for="last-name">Last Name:</label>
+				<input type="text" id="last-name" name="last-name" required>
+			</div>
+			<div class="form">
+                <div id="checkbox">
+                    <label for="accept-checkbox" style="font-size: 13px;">
+                        <input type="checkbox" id="accept-checkbox" name="accept-checkbox" required>
+                        I accept to the <a href=""> terms and conditions</a>
+                      </label>
+                </div>
+			</div>
+			<button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer class="footer">
+		<p>All Copyrights reserved ©</p>
+	</footer>
+    <script src="darkmode.js"></script>
+</body>
+</html>
